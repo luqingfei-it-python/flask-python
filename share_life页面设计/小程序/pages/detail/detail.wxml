@@ -1,0 +1,28 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <view class='myview'>
+    <image src='{{info.avatar}}' class='avatar'></image>
+    <text class='nick'>{{info.username}}</text>
+    <text class='time'>{{info.ctime}}</text>
+    <text class='words'>{{info.content}}</text>
+    <image src='{{info.content_imag_url}}' class='lifeImg'></image>
+
+    <!-- 点赞，评论 -->
+    <text class='zanname'>{{goods[0]}} {{goods[1]}}等{{zannum}}觉得很赞</text>
+    <image src='/image/dianzan2.png' class='iconzan'></image>
+      <image class="hide{{showView?'show':''}} iconping" src='/image/pinglun.png' bindtap="onChangeShowState"></image> 
+  <image class="hide{{showView?'':'show'}} iconping" src='/image/pinglun.png' bindtap="onChangeShowState"></image>
+    <input  class="hide{{showView?'show':''}} commitBox" bindinput='getinput'></input>
+    <button class="hide{{showView?'show':''}} commitBtn" bindtap='getCommit'>√</button>
+
+    <!-- 他人的评论 -->
+    <view wx:for='{{comment}}' wx:key='{{index}}' class='mycom'>
+     <image src='{{item.user_avatar}}' class='comavatar'></image>
+     <text class='comnick'>{{item.user_name}}</text>
+     <text class='comtime'>{{item.create_time}}</text>
+     <text class='comwords'>{{item.content}}</text>
+    </view>
+
+  </view>
+</view>
+

@@ -1,0 +1,108 @@
+/* pages/detail/detail.wxss */
+.myview{
+  width: 90%;
+  margin: 40rpx auto;
+  /* box-shadow: 10rpx 10rpx 20rpx #aaa; */
+  border-radius: 20rpx;
+  padding: 40rpx;
+}
+.avatar{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  float: left;
+}
+.nick{
+  font-size: 40rpx;
+  position: absolute;
+  margin-top: 20rpx;
+  margin-left: 200rpx
+}
+.time{
+  position: absolute;
+  margin-top: 74rpx;
+  margin-left: 200rpx;
+  font-size: 34rpx;
+}
+.words{
+  font-size: 34rpx;
+  position: absolute;
+  top: 220rpx;
+}
+.lifeImg{
+  height: 300rpx;
+  width: 100%;
+  margin-top: 160rpx;
+}
+.zanname{
+  position: absolute;
+  bottom: 450rpx;
+  left: 40rpx;
+  font-size: 34rpx;
+}
+.iconzan{
+  width: 50rpx;
+  height:50rpx;
+  position: absolute;
+  bottom: 450rpx;
+  right: 100rpx
+}
+.iconping{
+  width: 50rpx;
+  height:50rpx;
+  position: absolute;
+  bottom: 450rpx;
+  right: 20rpx
+}
+.mycom{
+  margin-top: 100rpx;
+  position: relative
+}
+.comavatar{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.comnick{
+  margin-left: 40rpx;
+  position: absolute;
+  top: 0;
+}
+.comtime{
+  font-size: 32rpx;
+  position: absolute;
+  top: 40rpx;
+  left: 120rpx;
+  
+}
+.comwords{
+  margin-top:40rpx;
+  position: absolute;
+  top: 40rpx;
+  left: 120rpx
+
+}
+
+.commitBox{
+  border: 1rpx solid #aaa;
+  border-radius: 20rpx;
+  width: 80%;
+  height: 80rpx;
+  position: absolute;
+  bottom: 0;
+}
+.commitBtn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 14%;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+/* 控制评论框的显示与隐藏 */
+.hide{
+ display: none;
+}
+.show{ 
+ display: block;
+}

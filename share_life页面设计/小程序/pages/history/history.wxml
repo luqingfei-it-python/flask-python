@@ -1,0 +1,13 @@
+<!--pages/history/history.wxml-->
+ <view class='myview' wx:for="{{megList}}" wx:key="{{index}}">
+   <view bindtap='getdetail'>
+      <image src='{{data1.avatar_url}}' class='avatar'></image>
+      <text class='username'>{{data1.name}}</text>
+      <text class='time'>{{item.ctime}}</text>
+      <text class='words'>{{item.content}}</text>
+      <view class='lifeImg'>
+      <image src='{{item.content_imag_url}}' ></image>
+      </view>
+    </view>
+    <button class="delete" bindtap='delete' data-id='{{item.dynamic_id}}'>删除记录</button> 
+ </view>

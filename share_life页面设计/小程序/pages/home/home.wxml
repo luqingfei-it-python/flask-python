@@ -1,0 +1,23 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view class='myview' wx:for="{{list}}" wx:key="{{index}}">
+   <view >
+      <image src='{{item.avatar_url}}' class='avator' bindtap='user_history' data-id='{{item.user_id}}'></image>
+      <text class='username'>{{item.user_name}}</text>
+      <text class='time'>{{item.ctime}}</text>
+      <text class='words'bindtap='getdetail' data-id='{{item.dynamic_id}}'>{{item.content}}</text>
+      <view class='lifeImg' bindtap='getdetail' data-id='{{item.dynamic_id}}'>
+      <image src='{{item.content_imag_url}}' ></image>
+      </view>
+    </view>
+    <!-- 点赞 -->
+      <image src="{{item.status==='true'? '/image/dianzan2.png':'/image/dianzan.png'}}" class='iconzan' bindtap="iconClick"  data-id='{{item.dynamic_id}}' data-index='{{index}}'></image>
+     <!-- 评论 -->
+   <image class="hide{{showView?'show':''}} iconping" src='/image/pinglun2.png' bindtap="onChangeShowState" data-id='{{item.dynamic_id}}' data-index='{{index}}'></image> 
+  <image class="hide{{showView?'':'show'}} iconping" src='/image/pinglun.png' bindtap="onChangeShowState" data-id='{{item.dynamic_id}}' data-index='{{index}}' data-user='{{item.user_id}}'></image>
+      
+      <input  class="hide{{showView?'show':''}} commitBox" bindinput='getcoment'></input>
+    <button class="hide{{showView?'show':''}} commitBtn" bindtap='getCommit'>√</button>
+  </view>
+</view>
+     

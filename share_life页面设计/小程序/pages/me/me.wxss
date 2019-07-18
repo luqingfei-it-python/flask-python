@@ -1,0 +1,34 @@
+/* pages/me/me.wxss */
+.myview{
+  width: 90%;
+  margin: 40rpx auto;
+  height: 320rpx;
+  box-shadow: 10rpx 10rpx 20rpx #aaa;
+  border-radius: 20rpx
+}
+.avatar{
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 50%;
+  float: left;
+  margin-top: 40rpx
+}
+.nick{
+  font-size: 50rpx;
+  position: absolute;
+  margin-top: 118rpx;
+  margin-left: 50rpx
+}
+.gender{
+  position: absolute;
+  margin-top: 130rpx;
+  margin-left: 180rpx
+}
+.viewtab{
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 90%;
+  margin: 40rpx auto;
+  box-shadow: 10rpx 10rpx 20rpx #aaa;
+  border-radius: 20rpx
+}

@@ -1,0 +1,12 @@
+<!--pages/user_history/user_history.wxml-->
+<view class='myview' wx:for="{{user_list}}" wx:key="{{index}}">
+   <view bindtap='getdetail' data-id='{{item.dynamic_id}}'>
+      <image src='{{item.avatar_url}}' class='avatar'></image>
+      <text class='username'>{{item.user_name}}</text>
+      <text class='time'>{{item.ctime}}</text>
+      <text class='words'>{{item.content}}</text>
+      <view class='lifeImg'>
+      <image src='{{item.content_imag_url}}' ></image>
+      </view>
+    </view>
+ </view>

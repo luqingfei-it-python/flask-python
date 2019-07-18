@@ -1,0 +1,32 @@
+/* pages/trends/trends.wxss */
+.title{
+  margin-left:45%;
+  font-size:50rpx;
+  margin-top: 40rpx
+}
+.submit{
+  width: 16%;
+  height: 70rpx;
+  margin-right: 20rpx;
+  line-height: 70rpx;
+  margin-top: 36rpx;
+}
+.weui-textarea{
+  margin-top: 10rpx;
+  border: 2rpx solid #aaa;
+  box-shadow: 10rpx 10rpx 20rpx #aaa;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  width: 90%;
+  margin: auto
+}
+.add_img{
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  width: 94%
+}
+.uploadImg{
+  width: 94%;
+  margin-left: 3%;
+  border-radius: 20rpx;
+}

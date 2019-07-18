@@ -1,0 +1,14 @@
+/* pages/mydata/mydata.wxss */
+.viewtab{
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 90%;
+  margin: 40rpx auto;
+  box-shadow: 10rpx 10rpx 20rpx #aaa;
+  border-radius: 20rpx
+}
+.avatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}

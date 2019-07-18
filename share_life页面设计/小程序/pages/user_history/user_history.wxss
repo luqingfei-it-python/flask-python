@@ -1,0 +1,48 @@
+/* pages/user_history/user_history.wxss */
+/* pages/history/history.wxss */
+.myview{
+  width: 90%;
+  margin: 40rpx auto;
+  height: 480rpx;
+  box-shadow: 10rpx 10rpx 20rpx #aaa;
+  border-radius: 20rpx;
+  border: 1rpx solid #aaa;
+  padding: 10rpx ;
+  position: relative;
+  overflow: hidden
+}
+.avatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  float: left;
+}
+.username{
+  font-size: 40rpx;
+  margin-left: 34rpx;
+}
+.time{
+  position: absolute;
+  top: 20rpx;
+  left: 300rpx;
+  font-size: 32rpx
+}
+.words{
+  font-size: 34rpx;
+  display:block;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  margin-left:130rpx;
+}
+.lifeImg{
+  /* background-size: cover; */
+  display: block;
+  height: 300rpx;
+  width: 100%;
+  margin-top: 20rpx;
+  overflow: hidden
+}
+.lifeImg image{
+  background-size: cover
+}

@@ -1,0 +1,11 @@
+
+<view>
+  <text class='title'>更圈</text>
+  <button class='submit' bindtap='submit'> √</button>
+  <textarea class="weui-textarea" placeholder="更一下~ 分享美好生活" bindblur='gettext'></textarea>
+  <!-- 上传图片 -->
+  <button bindtap="upimg" class='add_img' bindtap='upimg' >添加图片</button>
+  <image src="{{source}}" type="file" class='uploadImg'></image>
+</view>
+
+

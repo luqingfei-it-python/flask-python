@@ -1,0 +1,14 @@
+<!--pages/mydata/mydata.wxml-->
+   <view class='viewtab'>
+    <text>用户名:{{mydata.user_name}}</text>
+  </view>
+   <view class='viewtab'>
+    <text>性别:{{mydata.gender}}</text>
+  </view>
+  <view class='viewtab'>
+    <text>所在城市:{{mydata.city}}</text>
+  </view>
+    <view class='viewtab'>
+    <text>所在省份:{{mydata.province}}</text>
+  </view>
+   

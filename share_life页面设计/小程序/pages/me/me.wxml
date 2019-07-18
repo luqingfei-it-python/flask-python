@@ -1,0 +1,17 @@
+<!--pages/me/me.wxml-->
+<view>
+  <view class='myview'>
+    <image src='{{myinfo.avatar_url}}' class='avatar'></image>
+    <text class='nick'>{{myinfo.user_name}}</text>
+    <text class='gender'>{{myinfo.gender}}</text>
+  </view>
+  <view class='viewtab' bindtap='history'>
+    <text>更圈历史</text>
+  </view>
+  <view class='viewtab' bindtap='getData'>
+    <text>个人资料</text>
+  </view>
+  <view class='viewtab'  bindtap='exit'>
+    <text>退出登录</text>
+  </view>
+</view>
